@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor img {
+    width: 30%;
+    height: 30px;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1400px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header::before {
+    content: "";
+    display: block;
+    margin-bottom: 80px;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    background: #fff;
+    border-bottom: 1px solid transparent;
+    box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+}
+
+.enlaces-header {
+    font-weight: 300;
+    margin: auto;
+    transition: all ease-in-out .6s;
+}
+
+.nav .enlaces-header a {
+    color: #5d6678;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.nav .enlaces-header a:hover {
+    color: #fff;
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+    transition: all ease-in-out .5s;
+}
+
+.hamburguer{
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+    display: none;
+}
+.hamburguer >i{
+  font-size: 25px;
+  line-height: 78px;
+
+}
+
+i{
+    font-size: 25px;
+    line-height: 80px;
+    margin: 0 auto;
+}
+.titulospro {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.contenido-header {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenido-header>img {
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    animation: ease-in animacion 0.5s;
+}
+
+.textos-header {
+    margin: 0 0 0 30px;
+}
+
+.contenido-header P {
+    font-weight: 300;
+    margin-top: 14px;
+    color: #5d6678;
+    text-align: justify;
+}
+
+@keyframes animacion {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.contenido-header a {
+    margin: 28px 0 0 0;
+    width: 150px;
+    display: inline-block;
+    background-color: #d03d3d;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
+}
+
+/*nuevo wensaasaasasssa*/
+.section-ducation {
+    background-color: #dbdbdb;
+}
+
+.section-ducation .title {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.education {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px;
+}
+
+.education i {
+    border: 2px solid #bd6060;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #d03d3d;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 36px;
+}
+
+.education:hover {
+    background-color: #d03d3d;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .8s;
+}
+
+.content-education .education a:hover {
+    color: grey;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+/*       dfdgfdg           */
+
+.section-certificates .title {
+    display: block;
+    margin: 15px 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.certificates {
+    width: 22%;
+    border-radius: 5px;
+    border: 2px solid rebeccapurple;
+    margin-top: 15px;
+    text-align: center;
+    padding: 15px;
+}
+
+.certificates img {
+    height: 100px;
+    width: auto;
+}
+
+.certificates a {
+    font-size: 12px;
+    color: #5d6678;
+    text-decoration: none;
+}
+
+.certificates:hover {
+    background-color: rgb(91, 108, 163);
+    box-shadow: 0 0 8px gray;
+    color: #fff;
+    transform: scale(1.1);
+    transition: all ease-in-out .7s;
+    border: #dbdbdb;
+}
+
+.certificates a:hover {
+    color: #dbdbdb;
+}
+
+/*############################################################################pie de pagina ##################################################################### */
+footer {
+    background-color: rgb(70, 70, 70);
+    padding: 20px 0;
+    padding-top: 50px 20px 0 0;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.partFooter {
+    width: 22%;
+    text-align: center;
+}
+
+.pastFooter img {
+    width: 60%;
+}
+
+.partFooter h4 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400px;
+    margin-bottom: 15px;
+    background-color: #d03d3d;
+    padding: 5px 0;
+    border: 1px solid #d03d3d;
+    border-radius: 5px;
+}
+
+.contact {
+    margin: 10px;
+    display: block;
+    text-align: left;
+}
+
+.contact>i {
+    float: left;
+    margin: 0 0 5px;
+    color: white;
+    border-radius: 50%;
+    border: 1px solic white;
+    height: 30px;
+    width: 20px;
+    line-height: 28px;
+    text-align: center;
+    align-items: center;
+}
+
+.contact>p {
+    margin-left: 50px;
+    align-items: center;
+    line-height: 20px;
+    font-weight: 500px;
+    color: rgb(150, 160, 250);
+}
+
+.partFooter>a {
+    display: block;
+    text-decoration: nome;
+    color: #e0d2d2;
+    margin-bottom: 10px;
+    font-weight: 500px;
+    padding: 5px;
+}
+
+.partFooter>a:hover {
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+    border-radius: 5px;
+    transition: all ease-in-out .6s;
+}
+
+.social-media>a>i {
+    font-size: 20px;
+    display: inline-block;
+
+    color: #fff;
+    border-radius: 1px solid #fff;
+    width: 38px;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .3s;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.social-media>a>i:hover {
+    background-color: #d03d3d;
+    border-color: #d03d3d;
+}
+/*############################################################################pie de pagina ##################################################################### */
+@media screen and (max-width: 700px){
+  body{
+    background-color: cadetblue;
+  }
+
+  .hamburguer{
+    display: block;
+  }
+  .enlaces-header{
+    position: fixed;
+    background-color: #4db6a4;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    clip-path: circle(0.0% at 1% 1%);
+
+  }
+
+  .nav .hamburguer{
+    clip-path: circle(150.0% at 0 0);
+  }
+
+  .nav .enlaces-header a{
+    color: #fff;
+    background-color: #3dd09f;
+    text-transform: uppercase;
+    font-weight: 800;
+    width: 50%;
+    text-align: center;
+    margin-top: 20px;
+    
+  }
+
+  h1{
+    font-size: 25px;
+  }
+
+  .textos-header{
+    margin: 0px;
+  }
+
+  .contenido-header{
+    display: block;
+    display: auto;
+    margin-bottom: 15px;
+  }
+  .contenido-header>img{
+    margin: 25px 0 0 0;
+    width: 120px;
+    height: 150px;
+  }
+
+  /* section education */
+  .education{
+    width: 80%;
+    margin-bottom: 15px;
+  }
+   /* section certificates */
+   .certificates{
+    width: 45%;
+   }
+   .certificates img{
+    height: 80px;
+   }
+   /* section footer */
+
+   .partFooter img{
+    display: none;
+   }
+
+   .partFooter{
+    width: 80%;
+   }
+}
