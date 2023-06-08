@@ -1,22 +1,40 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&display=swap');
+
+:root {
+    --color-brown: #867070;
+    --color-peach: #D5B4B4;
+    --color-cream: #E4D0D0;
+    --color-skin: #F5EBEB;
+}
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+
 }
 
-body{
+body {
     font-family: 'Roboto', sans-serif;
 }
 
-h1{
+h1 {
     font-size: 50px;
+    font-family: 'Nova Round', cursive;
+    letter-spacing: -4px;
+    ;
 }
 
-.contenedor{
+.contenedor {
     width: 90%;
     max-width: 1400px;
     margin: auto;
     overflow: hidden;
+
+}
+
+header {
+    background-color: var(--color-skin);
 }
 
 header::before {
@@ -25,10 +43,10 @@ header::before {
     margin-bottom: 80px;
 }
 
-nav{
+nav {
     width: 100%;
     height: 80px;
-    background-color: #fff;
+    background-color: var(--color-peach);
     border-bottom: 1px solid transparent;
     box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, .2);
     position: fixed;
@@ -36,7 +54,7 @@ nav{
     z-index: 100;
 }
 
-.nav{
+.nav {
     display: flex;
     height: 80px;
     width: 100%;
@@ -49,8 +67,8 @@ nav{
     transition: all ease-in-out .6s;
 }
 
-.nav .enlaces-header a{
-    color: #4938e0;
+.nav .enlaces-header a {
+    color: #000;
     text-decoration: none;
     margin-left: 20px;
     padding: 12px;
@@ -59,14 +77,14 @@ nav{
     font-weight: 500;
 }
 
-.nav .enlaces-header a:hover{
+.nav .enlaces-header a:hover {
     color: #fff;
-    background-color: rgb(70, 48, 180);
+    background-color: var(--color-brown);
     border-color: sienna;
     transition: all ease-in-out .5s;
 }
 
-.hamburguer{
+.hamburguer {
     height: 80px;
     width: 80px;
     text-align: center;
@@ -76,17 +94,17 @@ nav{
     display: none;
 }
 
-.hamburguer > i{
+.hamburguer>i {
     font-size: 25px;
     line-height: 78px;
 }
 
-.titulospro{
+.titulospro {
     text-align: left;
     margin: 20px;
 }
 
-.contenido-header{
+.contenido-header {
     width: 80%;
     height: 600px;
     display: flex;
@@ -96,34 +114,40 @@ nav{
     margin: 0 auto;
 }
 
-.contenido-header > img{
-    width: 300px;
-    height: 300px;
+.contenido-header>img {
+    margin-top: 90px;
+    height: 400px;
     margin-left: 50px;
+    clip-path: circle(35.0% at 50% 30%);
     animation: ease-in animacion 0.5s;
 }
 
-.textos-header{
+.textos-header {
     margin: 0 0 0 30px;
 }
 
-.contenido-header p{
-    font-weight: 300;
+.contenido-header p {
+    font-weight: 400;
     margin-top: 14px;
-    color: cadetblue;
+    color: #000;
     text-align: justify;
 }
 
-@keyframes animacion{
-    0%{ transform: scale(0); }
-    100%{ transform: scale(1);}
+@keyframes animacion {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 
-.contenido-header a{
+.contenido-header a {
     margin: 28px 0 0 0;
     width: 150px;
     display: inline-block;
-    background-color: blueviolet;
+    background-color: var(--color-brown);
     text-align: center;
     color: #fff;
     text-decoration: none;
@@ -134,14 +158,15 @@ nav{
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
+
 /* ######################### EDUCATION ######################### */
 
-.section-education{
+.section-education {
     /* background-color: rgb(110, 66, 231); */
-    background-color: #6f63d4;
+    background-color: var(--color-cream);
 }
 
-.section-education .title{
+.section-education .title {
     display: block;
     margin: 15px 0;
     width: 100%;
@@ -149,24 +174,24 @@ nav{
     text-transform: uppercase;
 }
 
-.content-education{
+.content-education {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 30px;
 }
 
-.education{
+.education {
     width: 30%;
     background-color: #fff;
     border-radius: 8px;
     padding: 30px;
 }
 
-.education i{
-      border: 2px solid #4938e0;
+.education i {
+    border: 2px solid var(--color-brown);
     border-radius: 50%;
-    background-color: #4938e0;
+    background-color: var(--color-brown);
     color: #fff;
     width: 40px;
     height: 40px;
@@ -175,25 +200,40 @@ nav{
     line-height: 36px;
 }
 
-.education:hover{
-    background-color: #4938e0;
+.education:hover {
+    background-color: var(--color-brown);
     box-shadow: 0 0 8px gray;
     transition: all ease-in-out .4s;
     color: #fff;
 }
 
-.content-education .education a{
-    color: gray;
+.content-education .education:hover a {
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    border: var(--color-skin) solid 2px;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 5px;
+    display: block;
+}
+
+.content-education .education a {
+    color: #000;
+    
     font-size: 12px;
     text-decoration: none;
 }
 
-.content-education .education a:hover{
-    color: #fff;
+.content-education .education a:hover {
+
 }
 
 /* ######################### CERTIFICATES ######################### */
-.section-certificates .title{
+.section-certificates .title {
     display: block;
     margin: 15px 0 0 0;
     width: 100%;
@@ -201,36 +241,36 @@ nav{
     text-transform: uppercase;
 }
 
-.content-certificates{
+.content-certificates {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     padding-bottom: 30px;
-   
+
 }
 
-.certificates{
+.certificates {
     width: 22%;
     border-radius: 5px;
     border: 2px solid red;
     padding: 15px;
     text-align: center;
     margin-top: 15px;
-     background-color: #6f63d4;
+    background-color: #6f63d4;
 }
 
-.certificates img{
+.certificates img {
     height: 100px;
     width: auto;
 }
 
-.certificates a{
+.certificates a {
     font-size: 12px;
     color: gray;
     text-decoration: none;
 }
 
-.certificates:hover{
+.certificates:hover {
     background-color: #4938e0;
     box-shadow: 0 0 8px gray;
     color: #fff;
@@ -238,12 +278,12 @@ nav{
     transition: all ease-in-out .7s;
 }
 
-.certificates a:hover{
+.certificates a:hover {
     color: #fff;
 }
 
 /* ######################### PIE DE PAGINA ######################### */
-footer{
+footer {
     background-color: #6f63d4;
     padding: 50px 0 20px 0;
     overflow: hidden;
@@ -253,16 +293,17 @@ footer{
     margin: auto;
 }
 
-.partFooter{
+.partFooter {
     width: 22%;
     text-align: center;
 }
 
-.partFooter img{
+.partFooter img {
     width: 60%;
+    clip-path: circle(35.0% at 50% 30%);
 }
 
-.partFooter h4{
+.partFooter h4 {
     color: #fff;
     font-size: 20px;
     font-weight: 400;
@@ -273,13 +314,13 @@ footer{
     border-radius: 5px;
 }
 
-.contact{
+.contact {
     margin: 10px;
     display: block;
     text-align: left;
 }
 
-.contact > i{
+.contact>i {
     float: left;
     margin: 0 0 0 10px;
     color: #fff;
@@ -292,7 +333,7 @@ footer{
     align-items: center;
 }
 
-.contact > p{
+.contact>p {
     margin-left: 50px;
     align-items: center;
     line-height: 28px;
@@ -301,7 +342,7 @@ footer{
 }
 
 
-.partFooter > a{
+.partFooter>a {
     display: block;
     text-decoration: none;
     color: #fff;
@@ -310,40 +351,41 @@ footer{
     padding: 5px;
 }
 
-.partFooter > a:hover{
+.partFooter>a:hover {
     background-color: #4938e0;
     border-color: #4938e0;
     border-radius: 5px;
     transition: all ease-in-out .6s;
 }
 
-.social-media > a > i{
-  font-size: 20px;
-  display: inline-block;
-  color: #fff;
-  width: 38px;
-  border: 1px solid #fff;
-  height: 38px;
-  line-height: 36px;
-  cursor: pointer;
-  margin-top: 20px;
-  text-align: center;
-  transition: all ease-in-out .6s;
-  margin-right: 5px;
-  border-radius: 50%;  
+.social-media>a>i {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    width: 38px;
+    border: 1px solid #fff;
+    height: 38px;
+    line-height: 36px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-align: center;
+    transition: all ease-in-out .6s;
+    margin-right: 5px;
+    border-radius: 50%;
 }
 
-.social-media > a > i:hover{
+.social-media>a>i:hover {
     background-color: #4938e0;
     border-color: #4938e0;
 }
+
 /* ############################# BREALPOINTS ############################### */
-@media screen and (max-width: 700px){
-    .hamburguer{
+@media screen and (max-width: 700px) {
+    .hamburguer {
         display: block;
     }
 
-    .enlaces-header{
+    .enlaces-header {
         position: fixed;
         background-color: #d03d3d;
         top: 0;
@@ -356,11 +398,11 @@ footer{
         clip-path: circle(0.0% at 0 0);
     }
 
-    .nav .hamburgueropen{
+    .nav .hamburgueropen {
         clip-path: circle(150.0% at 0 0);
     }
 
-    .nav .enlaces-header a{
+    .nav .enlaces-header a {
         color: #fff;
         background-color: #6f63d4;
         text-transform: uppercase;
@@ -370,35 +412,35 @@ footer{
         margin-top: 20px;
     }
 
-    h1{
+    h1 {
         font-size: 28px;
         margin-top: 10px;
     }
 
-    .textos-header{
+    .textos-header {
         margin: 0px;
     }
 
-    .contenido-header{
+    .contenido-header {
         display: block;
         height: auto;
         margin-bottom: 15px;
     }
 
-    .contenido-header > img{
+    .contenido-header>img {
         margin: 25px 0 0 0;
         width: 150px;
         height: 150px;
     }
 
     /* SECTION EDUCATION */
-    .education{
+    .education {
         width: 90%;
         margin-bottom: 15px;
     }
 
     /* SECTION CERTIFICATES */
-    .certificates{
+    .certificates {
         width: 45%;
     }
 
@@ -411,7 +453,7 @@ footer{
         display: none;
     }
 
-    .partFooter{
+    .partFooter {
         width: 80%;
     }
 }
