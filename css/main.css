@@ -207,18 +207,24 @@ nav {
     color: #fff;
 }
 
+.content-education .education a {
+    display: block;
+    font-size: 12px;
+    margin-bottom: calc(10px + 14px + 4px + 2px + 1px);
+}
+
 .content-education .education:hover a {
     color: #fff;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 18px;
+    font-size: 14px;
     border: var(--color-skin) solid 2px;
-    padding: 5px;
+    padding: 7px;
     border-radius: 7px;
     text-align: center;
-    margin-top: 5px;
-    display: block;
+    margin-top: 10px;
+    margin-bottom: auto;
 }
 
 .content-education .education a {
@@ -226,10 +232,6 @@ nav {
     
     font-size: 12px;
     text-decoration: none;
-}
-
-.content-education .education a:hover {
-
 }
 
 /* ######################### CERTIFICATES ######################### */
