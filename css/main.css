@@ -229,7 +229,7 @@ nav {
 
 .content-education .education a {
     color: #000;
-    
+
     font-size: 12px;
     text-decoration: none;
 }
@@ -300,9 +300,32 @@ footer {
     text-align: center;
 }
 
+
+
+.partFooter:first-child {
+    /* Lo que hacemos aquí es definir la altura del contenedor de la imagen
+    en 0, para que no ocupe espacio vertical, pero, si va a continuar ocupando
+    espacio horizontal, por lo que el contenido no se corre horizontalmente. */
+    height: 0;
+    /* La imagen tiene un clip-path, que lo que hace es volver el contenido 
+    que no se va a mostrar, invisible, por lo que no se verá, pero, seguirá
+    ocupando espacio. */
+    /* Al establecer una altura de 0, evitamos el espacio sobrante al final
+    de la página, y al establecer overflow en visible, dejamos que la imagen
+    se sigua mostrando. */
+    overflow-y: visible;
+    padding: 0 30px;
+}
+
+/*
+@media screen and (max-width: ) {
+    
+}*/
+
 .partFooter img {
-    width: 60%;
+    width: 100%;
     clip-path: circle(35.0% at 50% 30%);
+    max-width: 185px;
 }
 
 .partFooter h4 {
@@ -381,7 +404,7 @@ footer {
     border-color: var(--color-peach);
 }
 
-/* ############################# BREALPOINTS ############################### */
+/* ############################# BREAKPOINTS ############################### */
 @media screen and (max-width: 700px) {
     .hamburguer {
         display: block;
