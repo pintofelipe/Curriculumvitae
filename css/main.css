@@ -193,3 +193,51 @@ nav{
 .content-education .education a:hover{
     color: #fff;
 }
+
+/* ######################### CERTIFICATES ######################### */
+.section-certificates .title{
+    display: block;
+    margin: 15px 0 0 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-certificates{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+
+.certificates{
+    width: 22%;
+    border-radius: 5px;
+    border: 2px solid red;
+    padding: 15px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.certificates img{
+    height: 100px;
+    width: auto;
+}
+
+.certificates a{
+    font-size: 12px;
+    color: gray;
+    text-decoration: none;
+}
+
+.certificates:hover{
+    background-color: #4938e0;
+    box-shadow: 0 0 8px gray;
+    color: #fff;
+    transform: scale(1.05);
+    transition: all ease-in-out .7s;
+}
+
+.certificates a:hover{
+    color: #fff;
+}
