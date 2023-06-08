@@ -60,5 +60,83 @@ nav{
 
 .nav .enlaces-header a:hover{
     color: #fff;
-    background-color: rgb(70, 48, blue);
+    background-color: rgb(70, 48, 180);
+    border-color: sienna;
+    transition: all ease-in-out .5;
+}
+
+.hamburguer{
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+}
+
+
+.hamburguer > i{
+    font-size: 25px;
+    line-height: 78px;
+}
+
+.titulospro{
+    text-align: left;
+    line-height: 78px;
+}
+
+.titulospro{
+    text-align: left;
+    margin: 20px;
+}
+
+.contenido-header{
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contenido-header > img{
+    width: 300px;
+    height: 300px;
+    margin-left: 50px;
+    animation: ease-in animacion 0.5;
+}
+
+.textos-header{
+    margin:  0 0 0 30px;
+}
+
+.contenido-header p{
+    font-weight: 300;
+    margin-top: 14px;
+    color: cadetblue;
+    text-align: justify;
+}
+
+@keyframes animacion{
+    0%{transform: scale(0);}
+    100%{ transform: scale(1);}
+}
+
+.contenido-header a{
+    margin: 28px 0 0 0;
+    width: 150px;
+    display: inline-block;
+    background-color: blueviolet;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 0;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
