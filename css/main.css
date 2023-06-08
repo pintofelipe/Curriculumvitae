@@ -37,7 +37,6 @@ nav{
 }
 
 .nav{
-    background-color: violet;
     display: flex;
     height: 80px;
     width: 100%;
@@ -130,8 +129,6 @@ nav{
     background-color: blueviolet;
     text-align: center;
     color: #fff;
-    text-align: center;
-    color: #fff;
     text-decoration: none;
     padding: 12px 0;
     border-radius: 5px;
@@ -178,4 +175,21 @@ nav{
     font-size: 22px;
     text-align: center;
     line-height: 36px;
+}
+
+.education:hover{
+    background-color: #4938e0;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .4s;
+    color: #fff;
+}
+
+.content-education .education a{
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.content-education .education a:hover{
+    color: #fff;
 }
